@@ -1,0 +1,60 @@
+{
+  "release_id": "AEGI-PUBLIC-EVIDENCE-v0.1.6.0",
+  "status": "PUBLISHED",
+  "release_date": "2026-09-29",
+  "website": "https://aegi.global",
+  "website_theme_version": "0.1.6.0",
+  "public_surfaces": [
+    "homepage evidence and assurance section",
+    "/evidence/ evidence and assurance hub",
+    "/core/ executable verification evidence",
+    "/shield/ current evaluation posture"
+  ],
+  "evidence_families": {
+    "mechanism": {
+      "record": "RUN-SCE-001",
+      "claim": "bounded synthetic mechanism behaviour",
+      "not_claimed": ["fraud truth", "accuracy", "predictive uplift", "production performance"]
+    },
+    "evaluation": {
+      "record": "RUN-BAF-003",
+      "claim": "supporting empirical evidence under frozen fixed-capacity public-synthetic evaluation",
+      "not_claimed": ["20.7% fraud reduction", "universal model superiority", "production performance", "independent validation"]
+    },
+    "execution_assurance": {
+      "record": "CREDIT-SCALE-256",
+      "case_count": 256,
+      "source_credit_world_count": 2304,
+      "canonical_receipt_profile_hash_match": "256/256",
+      "pr_main_artifact_identity": "19/19",
+      "factory_request_sha256": "4587bfcd494012e1edd8e9cdd761e9e4fae1052d164187aa44d1641433dbbcd9",
+      "shield_result_sha256": "c1d371f88360c847df93aa62b29682c24de31c408317824935cd9530bfed015e",
+      "shield_to_core_handoff_sha256": "d40e1e843a288abec74c3684b8be6fe00bb9230186bcae421a7fcdf414fb76e1",
+      "core_profile_result_sha256": "157b0abbb9d11420bbf370aac00b3a7540e9af827ec46ef906bc4e1b5f001de7",
+      "claim": "deterministic synthetic scale execution, custody and canonical-identity continuity",
+      "not_claimed": ["real-world credit correctness", "predictive accuracy", "production readiness", "fairness", "legal compliance"]
+    },
+    "core_verification": {
+      "profile": "credit_decision.v1",
+      "profile_status": "DRAFT",
+      "claim_status": "AEGI_COMPATIBLE",
+      "aegi_compliant": false,
+      "cts": "24/24 PASS",
+      "scale_batch_control_failures": 0,
+      "scale_batch_audit_states": {
+        "AUDIT_VALID": 83,
+        "AUDIT_INVALID": 131,
+        "AUDIT_UNDETERMINED": 42
+      },
+      "claim": "bounded reference-profile verification behaviour",
+      "not_claimed": ["universal truth", "model correctness", "audit defensibility", "signature verification", "trust-root validation", "production reliance"]
+    },
+    "operations": {
+      "record": "AEGI Operations v0.4.0",
+      "claim": "AEGI-operated bounded evaluation workflow",
+      "not_claimed": ["customer-host deployment", "production integration approval"]
+    }
+  },
+  "public_claim_boundary": "Evidence demonstrates bounded synthetic mechanism, evaluation, execution-assurance and reference-verifier behaviour. Institution-specific effectiveness, production performance and production reliance remain separate evidence gates.",
+  "historical_locked_submissions_modified": false
+}
