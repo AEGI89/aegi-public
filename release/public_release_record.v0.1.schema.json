@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aegi.global/schemas/public_release_record.v0.1.schema.json",
+  "title": "AEGI Public Release Record v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact_id",
+    "version",
+    "canonical_source",
+    "evidence_level",
+    "disclosure_decision",
+    "limitations_retained",
+    "contains_customer_data",
+    "contains_restricted_ip"
+  ],
+  "properties": {
+    "artifact_id": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "canonical_source": {"type": "string", "minLength": 1},
+    "evidence_level": {
+      "enum": [
+        "CONCEPT",
+        "SYNTHETIC_DEMO",
+        "FROZEN_EVALUATION",
+        "CONTROLLED_CUSTOMER_EVALUATION",
+        "CONTROLLED_PILOT",
+        "PRODUCTION_EVIDENCE"
+      ]
+    },
+    "disclosure_decision": {"enum": ["APPROVE_PUBLIC", "HOLD", "REJECT"]},
+    "limitations_retained": {"const": true},
+    "contains_customer_data": {"const": false},
+    "contains_restricted_ip": {"const": false},
+    "sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "signature_reference": {"type": ["string", "null"]},
+    "supersedes": {"type": ["string", "null"]},
+    "approver": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"]}
+  }
+}
