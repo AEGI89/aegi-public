@@ -1,0 +1,6 @@
+# AEGI public repository ownership
+* @AEGI89/dev @AEGI89/core-maintainers
+
+GOVERNANCE.md @AEGI89/core-maintainers @AEGI89/security-review
+SECURITY.md @AEGI89/security-review @AEGI89/core-maintainers
+.github/ @AEGI89/dev @AEGI89/security-review
